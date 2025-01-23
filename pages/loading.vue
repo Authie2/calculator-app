@@ -60,7 +60,7 @@ const router = useRouter();
 onMounted(() => {
   setTimeout(() => {
     router.push('/menu');
-  }, 3000);
+  }, 6000);
 });
 </script>
 
