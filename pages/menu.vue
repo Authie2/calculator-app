@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-// import Calculator from "~/components/calculator.vue";
+import Calculator from "~/components/calculator.vue";
 </script>
 
 <style scoped>
