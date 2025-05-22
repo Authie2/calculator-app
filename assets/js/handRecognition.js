@@ -55,7 +55,7 @@ export async function processHandwrittenMath(imagePath) {
     const cleanedText = extractedText.replace(/\n/g, ' ').trim();
     console.log(`Extracted Text: ${cleanedText}`);
     
-    const result = solveMathExpression(cleanedText);
+    const result = await solveMathExpression(cleanedText);
     console.log(`Solution: ${result}`);
   } catch (err) {
     console.error('Error processing the image:', err);

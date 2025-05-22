@@ -136,9 +136,9 @@ const redoAction = () => {
 };
 
 // Save the canvas content as an image
-const saveCanvas = () => {
+const saveCanvas = async () => {
   const dataUrl = canvas.value.toDataURL("image/png");
-  const text = processHandwrittenMath(dataUrl);
+  const text = await processHandwrittenMath(dataUrl);
 
   emit("updateDisplay", text);
 
