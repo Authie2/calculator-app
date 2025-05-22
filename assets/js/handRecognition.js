@@ -41,9 +41,9 @@ async function extractTextFromImage(imagePath) {
 }
 
 // Function to solve the math expression
-function solveMathExpression(expression) {
+async function solveMathExpression(expression) {
   try {
-    return math.evaluate(expression);
+    return await math.evaluate(expression);
   } catch (err) {
     return `Error in solving expression: ${err.message}`;
   }
