@@ -155,7 +155,7 @@ onMounted(() => {
 
   ctx.value = canvasElement.getContext("2d", { willReadFrequently: true }); // Enable performance optimization for readbacks
   ctx.value.strokeStyle = brushColor.value; // Initialize with default color
-  ctx.value.lineWidth = 2;
+  ctx.value.lineWidth = 5;
 
   // Initialize hand recognition
   initializeHandRecognition(canvasElement, ctx.value);

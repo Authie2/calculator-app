@@ -1,9 +1,9 @@
 <template>
-  <div class="w-screen h-screen bg-gradient-to-b from-black to-blue-500/30 from-80% flex items-center justify-center relative overflow-hidden">
+  <div class="w-screen h-screen bg-gradient-to-b from-black to-blue-500/100 from-80% flex items-center justify-center relative overflow-hidden">
     <div class="flex w-full h-full p-6 space-x-4">
       <!-- Drawing Area -->
       <div
-        class="flex-1 bg-transparent rounded-lg"
+        class="flex-1 bg-transparent rounded-lg bg-gradient-to-b from-white to-blue-500/100 from-80%"
         :class="position === 'left' ? 'order-1' : 'order-2'"
       >
         <DrawingArea @updateDisplay="updateDisplay" />
